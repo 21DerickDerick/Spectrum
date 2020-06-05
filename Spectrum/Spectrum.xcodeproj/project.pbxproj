@@ -22,6 +22,7 @@
 		F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568090248A1601001CB30E /* AlertWireframe.swift */; };
 		F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568092248A1A33001CB30E /* NetworkProvider.swift */; };
 		F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568094248A1B30001CB30E /* ReachabilityManager.swift */; };
+		F7568098248A2522001CB30E /* SpinnerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568097248A2522001CB30E /* SpinnerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		F7568090248A1601001CB30E /* AlertWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWireframe.swift; sourceTree = "<group>"; };
 		F7568092248A1A33001CB30E /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		F7568094248A1B30001CB30E /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		F7568097248A2522001CB30E /* SpinnerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		F7568082248A0E26001CB30E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				F7568096248A250F001CB30E /* LoadingIndicator */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -234,6 +237,14 @@
 				F7568090248A1601001CB30E /* AlertWireframe.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F7568096248A250F001CB30E /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				F7568097248A2522001CB30E /* SpinnerVC.swift */,
+			);
+			path = LoadingIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +488,7 @@
 				F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */,
 				F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */,
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
+				F7568098248A2522001CB30E /* SpinnerVC.swift in Sources */,
 				F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */,
 				F756808D248A10C6001CB30E /* Coordinator.swift in Sources */,
 				F7568051248A0D50001CB30E /* AppDelegate.swift in Sources */,
@@ -650,6 +662,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMGP992CD8;
 				INFOPLIST_FILE = Spectrum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -669,6 +682,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YMGP992CD8;
 				INFOPLIST_FILE = Spectrum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
