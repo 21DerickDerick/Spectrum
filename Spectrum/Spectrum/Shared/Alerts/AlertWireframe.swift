@@ -17,4 +17,8 @@ class AlertWireframe {
         alertController.addAction(actionButton)
         viewController?.present(alertController, animated: true, completion: nil)
     }
+    
+    func showNoInternetConnectionAlert(inViewController vc: UIViewController?) {
+        showOneButtonAlert("No Internet Connection", message: "Please check your connection", actionButton: "OK", inViewController: vc)
+    }
 }

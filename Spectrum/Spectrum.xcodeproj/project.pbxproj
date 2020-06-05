@@ -21,6 +21,7 @@
 		F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */; };
 		F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568090248A1601001CB30E /* AlertWireframe.swift */; };
 		F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568092248A1A33001CB30E /* NetworkProvider.swift */; };
+		F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568094248A1B30001CB30E /* ReachabilityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		F7568090248A1601001CB30E /* AlertWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWireframe.swift; sourceTree = "<group>"; };
 		F7568092248A1A33001CB30E /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		F7568094248A1B30001CB30E /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				F7568092248A1A33001CB30E /* NetworkProvider.swift */,
+				F7568094248A1B30001CB30E /* ReachabilityManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */,
 				F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */,
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
 				F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */,

@@ -12,6 +12,7 @@ class RootControllerService: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         ApplicationCoordinator.shared.start()
+        ReachabilityManager.shared.start()
         
         return true
     }
