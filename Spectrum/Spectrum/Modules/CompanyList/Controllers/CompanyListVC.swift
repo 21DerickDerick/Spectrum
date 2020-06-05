@@ -121,9 +121,6 @@ extension CompanyListVC: SearchCellDelegate {
             }
             
             tableView.reloadData()
-            let searchCellIndexPath = IndexPath(row: 0, section: 0)
-            let searchCell = tableView.cellForRow(at: searchCellIndexPath) as? SearchCell
-            searchCell?.searchTextField.becomeFirstResponder()
         }
     }
 }

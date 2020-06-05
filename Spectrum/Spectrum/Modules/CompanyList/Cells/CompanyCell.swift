@@ -35,9 +35,9 @@ class CompanyCell: BaseTableViewCell {
     }
     
     func setupCell(logoURL: String?, companyName: String?, companyWebsite: String?, companyDescription: String?) {
-        if let urlString = logoURL, let url = URL(string: urlString) {
-            logoImageView.kf.setImage(with: url)
-        }
+//        if let urlString = logoURL, let url = URL(string: urlString) {
+//            logoImageView.kf.setImage(with: url)
+//        }
         
         companyNameLabel.text = companyName ?? ""
         companyWebsiteLabel.text = companyWebsite ?? ""
