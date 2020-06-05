@@ -61,6 +61,7 @@ extension CompanyListVC {
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SearchCell.self), for: indexPath) as! SearchCell
+            cell.delegate = self
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CompanyCell.self), for: indexPath) as! CompanyCell
@@ -77,11 +78,8 @@ extension CompanyListVC {
     }
 }
 
-
-
 extension CompanyListVC: CompanyListCoordinatorDelegate {
     func didFinishSort(selection: String) {
-        
         switch selection {
         case CompanySortType.defaultType.rawValue:
             viewModel.currentDisplayCompanies = viewModel.defaultCompanies
@@ -97,3 +95,28 @@ extension CompanyListVC: CompanyListCoordinatorDelegate {
     }
 }
 
+extension CompanyListVC: SearchCellDelegate {
+    func textDidChange(search: String) {
+        if search.trimmingCharacters(in: .whitespaces) == "" {
+            switch viewModel.currentSortType {
+            case CompanySortType.defaultType.rawValue:
+                viewModel.currentDisplayCompanies = viewModel.defaultCompanies
+            case CompanySortType.nameAscending.rawValue:
+                viewModel.currentDisplayCompanies = viewModel.nameAscendingCompanies
+            default:
+                break
+            }
+            tableView.reloadData()
+        } else {
+            viewModel.currentDisplayCompanies = viewModel.currentDisplayCompanies.filter {
+                guard let name = $0.name else { return false }
+                return name.lowercased().contains(search.lowercased())
+            }
+            
+            tableView.reloadData()
+            let searchCellIndexPath = IndexPath(row: 0, section: 0)
+            let searchCell = tableView.cellForRow(at: searchCellIndexPath) as? SearchCell
+            searchCell?.searchTextField.becomeFirstResponder()
+        }
+    }
+}
