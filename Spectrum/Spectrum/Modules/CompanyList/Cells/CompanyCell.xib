@@ -94,8 +94,8 @@
             <connections>
                 <outlet property="cardView" destination="HF2-z4-qwG" id="fqh-fV-MvF"/>
                 <outlet property="companyDescriptionLabel" destination="yeT-tO-Kap" id="HnN-UG-46Y"/>
-                <outlet property="companyEmailLabel" destination="5Ma-g9-yzQ" id="Vr1-Xp-fYo"/>
                 <outlet property="companyNameLabel" destination="r0v-W7-Vz1" id="MJE-yD-VUT"/>
+                <outlet property="companyWebsiteLabel" destination="5Ma-g9-yzQ" id="Vr1-Xp-fYo"/>
                 <outlet property="favoriteButton" destination="rN8-f7-QER" id="Tch-2d-qcS"/>
                 <outlet property="followButton" destination="ZyB-Lp-GB5" id="Ctf-aS-3e6"/>
                 <outlet property="logoImageView" destination="Jr4-3n-s58" id="AC5-kp-FUA"/>

@@ -14,7 +14,7 @@ class CompanyCell: BaseTableViewCell {
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var companyNameLabel: MainLabel!
-    @IBOutlet weak var companyEmailLabel: TertiaryLabel!
+    @IBOutlet weak var companyWebsiteLabel: TertiaryLabel!
     @IBOutlet weak var companyDescriptionLabel: TertiaryLabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var followButton: FollowButton!
@@ -32,6 +32,16 @@ class CompanyCell: BaseTableViewCell {
         super.setupUI()
         
         cardView.layer.cornerRadius = 4
+    }
+    
+    func setupCell(logoURL: String, companyName: String, companyWebsite: String, companyDescription: String) {
+        if let url = URL(string: logoURL) {
+            logoImageView.kf.setImage(with: url)
+        }
+        
+        companyNameLabel.text = companyName
+        companyWebsiteLabel.text = companyWebsite
+        companyDescriptionLabel.text = companyDescription
     }
     
     @IBAction func didTapFavoriteButton(_ sender: UIButton) {

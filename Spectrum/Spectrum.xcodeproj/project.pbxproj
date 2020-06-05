@@ -39,6 +39,9 @@
 		F75680BF248A430D001CB30E /* TertiaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680BE248A430D001CB30E /* TertiaryLabel.swift */; };
 		F75680C2248A43F9001CB30E /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680C1248A43F9001CB30E /* FollowButton.swift */; };
 		F75680C4248A44D9001CB30E /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680C3248A44D9001CB30E /* CompanyCell.swift */; };
+		F75680C9248A4AD3001CB30E /* CompanyAndMemberProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680C8248A4AD3001CB30E /* CompanyAndMemberProvider.swift */; };
+		F75680CB248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680CA248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift */; };
+		F75680CD248A634C001CB30E /* CompanyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680CC248A634C001CB30E /* CompanyListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,9 @@
 		F75680BE248A430D001CB30E /* TertiaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TertiaryLabel.swift; sourceTree = "<group>"; };
 		F75680C1248A43F9001CB30E /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
 		F75680C3248A44D9001CB30E /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		F75680C8248A4AD3001CB30E /* CompanyAndMemberProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyAndMemberProvider.swift; sourceTree = "<group>"; };
+		F75680CA248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCompanyAndMemberResponse.swift; sourceTree = "<group>"; };
+		F75680CC248A634C001CB30E /* CompanyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +323,9 @@
 		F75680A8248A3603001CB30E /* CompanyList */ = {
 			isa = PBXGroup;
 			children = (
+				F75680C7248A4ABB001CB30E /* Models */,
+				F75680C6248A4AAD001CB30E /* Network */,
+				F75680C5248A4AA5001CB30E /* ViewModels */,
 				F75680B6248A40F1001CB30E /* Cells */,
 				F75680AC248A36A8001CB30E /* Controllers */,
 				F75680A9248A362B001CB30E /* Coordinators */,
@@ -373,6 +382,30 @@
 				F75680C1248A43F9001CB30E /* FollowButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F75680C5248A4AA5001CB30E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F75680CC248A634C001CB30E /* CompanyListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F75680C6248A4AAD001CB30E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F75680C8248A4AD3001CB30E /* CompanyAndMemberProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F75680C7248A4ABB001CB30E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F75680CA248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,6 +651,7 @@
 			files = (
 				F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */,
 				F75680B2248A38CE001CB30E /* SearchCell.swift in Sources */,
+				F75680CD248A634C001CB30E /* CompanyListViewModel.swift in Sources */,
 				F756809B248A25C4001CB30E /* UIColor+Additions.swift in Sources */,
 				F75680BD248A42E1001CB30E /* SecondaryLabel.swift in Sources */,
 				F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */,
@@ -627,6 +661,7 @@
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
 				F7568098248A2522001CB30E /* SpinnerVC.swift in Sources */,
 				F75680A5248A29D0001CB30E /* BaseTableViewController.swift in Sources */,
+				F75680C9248A4AD3001CB30E /* CompanyAndMemberProvider.swift in Sources */,
 				F75680BF248A430D001CB30E /* TertiaryLabel.swift in Sources */,
 				F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */,
 				F75680AB248A3645001CB30E /* CompanyListCoordinator.swift in Sources */,
@@ -638,6 +673,7 @@
 				F75680C4248A44D9001CB30E /* CompanyCell.swift in Sources */,
 				F75680A7248A2ACA001CB30E /* BaseTableViewCell.swift in Sources */,
 				F7568089248A0F88001CB30E /* RootControllerService.swift in Sources */,
+				F75680CB248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

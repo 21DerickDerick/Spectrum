@@ -22,7 +22,6 @@ class NetworkProvider {
         var request = URLRequest(url: url)
         request.httpMethod = type.rawValue
         request.timeoutInterval = 60
-        request.cachePolicy = .returnCacheDataDontLoad
         
         let httpHeaders = HTTPHeaders(headers)
         request.headers = httpHeaders
@@ -36,6 +35,8 @@ class NetworkProvider {
             .validate()
             .responseJSON(completionHandler: { (response) in
 
+                print("Response: \(response)")
+                
                 switch response.result {
                 case .failure(let error):
                     completion(nil, error)
