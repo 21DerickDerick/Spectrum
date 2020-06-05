@@ -28,6 +28,11 @@
 		F75680A3248A2996001CB30E /* BaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75680A2248A2996001CB30E /* BaseTableViewController.xib */; };
 		F75680A5248A29D0001CB30E /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680A4248A29D0001CB30E /* BaseTableViewController.swift */; };
 		F75680A7248A2ACA001CB30E /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680A6248A2ACA001CB30E /* BaseTableViewCell.swift */; };
+		F75680AB248A3645001CB30E /* CompanyListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680AA248A3645001CB30E /* CompanyListCoordinator.swift */; };
+		F75680AE248A36B6001CB30E /* CompanyListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680AD248A36B6001CB30E /* CompanyListVC.swift */; };
+		F75680B0248A3899001CB30E /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75680AF248A3899001CB30E /* SearchCell.xib */; };
+		F75680B2248A38CE001CB30E /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680B1248A38CE001CB30E /* SearchCell.swift */; };
+		F75680B5248A3E15001CB30E /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680B4248A3E15001CB30E /* SearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		F75680A2248A2996001CB30E /* BaseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTableViewController.xib; sourceTree = "<group>"; };
 		F75680A4248A29D0001CB30E /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		F75680A6248A2ACA001CB30E /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		F75680AA248A3645001CB30E /* CompanyListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListCoordinator.swift; sourceTree = "<group>"; };
+		F75680AD248A36B6001CB30E /* CompanyListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListVC.swift; sourceTree = "<group>"; };
+		F75680AF248A3899001CB30E /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		F75680B1248A38CE001CB30E /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		F75680B4248A3E15001CB30E /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +211,7 @@
 		F7568081248A0E19001CB30E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F75680A8248A3603001CB30E /* CompanyList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 		F7568082248A0E26001CB30E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				F75680B3248A3E07001CB30E /* TextFields */,
 				F7568096248A250F001CB30E /* LoadingIndicator */,
 				F7568099248A2598001CB30E /* Colors */,
 				F756809C248A27AA001CB30E /* Fonts */,
@@ -282,8 +294,43 @@
 				F75680A6248A2ACA001CB30E /* BaseTableViewCell.swift */,
 				F75680A2248A2996001CB30E /* BaseTableViewController.xib */,
 				F75680A4248A29D0001CB30E /* BaseTableViewController.swift */,
+				F75680AF248A3899001CB30E /* SearchCell.xib */,
+				F75680B1248A38CE001CB30E /* SearchCell.swift */,
 			);
 			path = TableViews;
+			sourceTree = "<group>";
+		};
+		F75680A8248A3603001CB30E /* CompanyList */ = {
+			isa = PBXGroup;
+			children = (
+				F75680AC248A36A8001CB30E /* Controllers */,
+				F75680A9248A362B001CB30E /* Coordinators */,
+			);
+			path = CompanyList;
+			sourceTree = "<group>";
+		};
+		F75680A9248A362B001CB30E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F75680AA248A3645001CB30E /* CompanyListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F75680AC248A36A8001CB30E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F75680AD248A36B6001CB30E /* CompanyListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F75680B3248A3E07001CB30E /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				F75680B4248A3E15001CB30E /* SearchTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F756805D248A0D52001CB30E /* LaunchScreen.storyboard in Resources */,
+				F75680B0248A3899001CB30E /* SearchCell.xib in Resources */,
 				F756805A248A0D52001CB30E /* Assets.xcassets in Resources */,
 				F75680A3248A2996001CB30E /* BaseTableViewController.xib in Resources */,
 			);
@@ -526,13 +574,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */,
+				F75680B2248A38CE001CB30E /* SearchCell.swift in Sources */,
 				F756809B248A25C4001CB30E /* UIColor+Additions.swift in Sources */,
 				F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */,
+				F75680AE248A36B6001CB30E /* CompanyListVC.swift in Sources */,
 				F75680A0248A27D8001CB30E /* UIFonts+Additions.swift in Sources */,
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
 				F7568098248A2522001CB30E /* SpinnerVC.swift in Sources */,
 				F75680A5248A29D0001CB30E /* BaseTableViewController.swift in Sources */,
 				F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */,
+				F75680AB248A3645001CB30E /* CompanyListCoordinator.swift in Sources */,
+				F75680B5248A3E15001CB30E /* SearchTextField.swift in Sources */,
 				F756808D248A10C6001CB30E /* Coordinator.swift in Sources */,
 				F7568051248A0D50001CB30E /* AppDelegate.swift in Sources */,
 				F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */,

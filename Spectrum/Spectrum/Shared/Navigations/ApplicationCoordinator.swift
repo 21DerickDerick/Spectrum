@@ -30,6 +30,9 @@ class ApplicationCoordinator: Coordinator {
 extension ApplicationCoordinator {
     func showCompanyList() {
         removeAllChildCoordinator()
-        // Todo: Start Company List Coordinator
+        let companyListCoordinator = CompanyListCoordinator(presenter: rootViewController, window: window)
+        appendChildCoordinator(companyListCoordinator)
+        companyListCoordinator.parentCoordinator = self
+        companyListCoordinator.start()
     }
 }
