@@ -9,12 +9,20 @@
 import UIKit
 
 extension UIColor {
-    @nonobjc class var mainBlue : UIColor {
-        return hexStringToUIColor(hex: "#5D80A6")
+    @nonobjc class var spectrumMain : UIColor {
+        return hexStringToUIColor(hex: "#2A404C")
     }
 
-    @nonobjc class var lightBlue : UIColor {
-        return hexStringToUIColor(hex: "#99C9E1")
+    @nonobjc class var spectrumSecondary : UIColor {
+        return hexStringToUIColor(hex: "#4B5F69")
+    }
+    
+    @nonobjc class var spectrumBackground : UIColor {
+        return hexStringToUIColor(hex: "#F2F7FA")
+    }
+    
+    @nonobjc class var spectrumFollowButton : UIColor {
+        return hexStringToUIColor(hex: "#5D80A6")
     }
     
     private static func hexStringToUIColor (hex:String) -> UIColor {
