@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C3BB124FEEA2A7B38D7BA9 /* Pods_SpectrumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074D20C82D715F1F338130D9 /* Pods_SpectrumTests.framework */; };
+		A97651EA3EFEA346AE4D8BDD /* Pods_Spectrum_SpectrumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAF05486186947534D4D7F3 /* Pods_Spectrum_SpectrumUITests.framework */; };
+		BF3D8ED3451C5304220D996C /* Pods_Spectrum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E8B074D02EE7E619563396 /* Pods_Spectrum.framework */; };
 		F7568051248A0D50001CB30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568050248A0D50001CB30E /* AppDelegate.swift */; };
 		F756805A248A0D52001CB30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7568059248A0D52001CB30E /* Assets.xcassets */; };
 		F756805D248A0D52001CB30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F756805B248A0D52001CB30E /* LaunchScreen.storyboard */; };
@@ -37,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		074D20C82D715F1F338130D9 /* Pods_SpectrumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpectrumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F9E5A2B0188FA75E390637 /* Pods-Spectrum-SpectrumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spectrum-SpectrumUITests.release.xcconfig"; path = "Target Support Files/Pods-Spectrum-SpectrumUITests/Pods-Spectrum-SpectrumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42E2D89F45C3ADB4BFDB163E /* Pods-Spectrum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spectrum.release.xcconfig"; path = "Target Support Files/Pods-Spectrum/Pods-Spectrum.release.xcconfig"; sourceTree = "<group>"; };
+		4DAF05486186947534D4D7F3 /* Pods_Spectrum_SpectrumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spectrum_SpectrumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E8B074D02EE7E619563396 /* Pods_Spectrum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spectrum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60597A840E4E207CFF2F5521 /* Pods-SpectrumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectrumTests.release.xcconfig"; path = "Target Support Files/Pods-SpectrumTests/Pods-SpectrumTests.release.xcconfig"; sourceTree = "<group>"; };
+		C801F1C705928818D9D4A31A /* Pods-Spectrum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spectrum.debug.xcconfig"; path = "Target Support Files/Pods-Spectrum/Pods-Spectrum.debug.xcconfig"; sourceTree = "<group>"; };
+		ECFCA7DAFB742AE7778B9960 /* Pods-SpectrumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectrumTests.debug.xcconfig"; path = "Target Support Files/Pods-SpectrumTests/Pods-SpectrumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5591ECFB5F7A0A6EDAFFFE /* Pods-Spectrum-SpectrumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spectrum-SpectrumUITests.debug.xcconfig"; path = "Target Support Files/Pods-Spectrum-SpectrumUITests/Pods-Spectrum-SpectrumUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F756804D248A0D50001CB30E /* Spectrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7568050248A0D50001CB30E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7568059248A0D52001CB30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3D8ED3451C5304220D996C /* Pods_Spectrum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C3BB124FEEA2A7B38D7BA9 /* Pods_SpectrumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97651EA3EFEA346AE4D8BDD /* Pods_Spectrum_SpectrumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7FBD085070A266FFFDC76D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C801F1C705928818D9D4A31A /* Pods-Spectrum.debug.xcconfig */,
+				42E2D89F45C3ADB4BFDB163E /* Pods-Spectrum.release.xcconfig */,
+				ED5591ECFB5F7A0A6EDAFFFE /* Pods-Spectrum-SpectrumUITests.debug.xcconfig */,
+				15F9E5A2B0188FA75E390637 /* Pods-Spectrum-SpectrumUITests.release.xcconfig */,
+				ECFCA7DAFB742AE7778B9960 /* Pods-SpectrumTests.debug.xcconfig */,
+				60597A840E4E207CFF2F5521 /* Pods-SpectrumTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2315CF1B4694737A1F8DE9F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E8B074D02EE7E619563396 /* Pods_Spectrum.framework */,
+				4DAF05486186947534D4D7F3 /* Pods_Spectrum_SpectrumUITests.framework */,
+				074D20C82D715F1F338130D9 /* Pods_SpectrumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7568044248A0D50001CB30E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +126,8 @@
 				F7568066248A0D52001CB30E /* SpectrumTests */,
 				F7568071248A0D52001CB30E /* SpectrumUITests */,
 				F756804E248A0D50001CB30E /* Products */,
+				1D7FBD085070A266FFFDC76D /* Pods */,
+				2315CF1B4694737A1F8DE9F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,7 +179,6 @@
 				F7568082248A0E26001CB30E /* UIComponents */,
 				F7568085248A0E42001CB30E /* Navigations */,
 				F7568087248A0E5D001CB30E /* Alerts */,
-				F7568086248A0E4D001CB30E /* Models */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -183,13 +223,6 @@
 			path = Navigations;
 			sourceTree = "<group>";
 		};
-		F7568086248A0E4D001CB30E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		F7568087248A0E5D001CB30E /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7568077248A0D52001CB30E /* Build configuration list for PBXNativeTarget "Spectrum" */;
 			buildPhases = (
+				9A93E3D1E099C273631263A7 /* [CP] Check Pods Manifest.lock */,
 				F7568049248A0D50001CB30E /* Sources */,
 				F756804A248A0D50001CB30E /* Frameworks */,
 				F756804B248A0D50001CB30E /* Resources */,
+				F51B85BBE1F4E91F15D10756 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F756807A248A0D52001CB30E /* Build configuration list for PBXNativeTarget "SpectrumTests" */;
 			buildPhases = (
+				0990718EBF92F4951837D51C /* [CP] Check Pods Manifest.lock */,
 				F756805F248A0D52001CB30E /* Sources */,
 				F7568060248A0D52001CB30E /* Frameworks */,
 				F7568061248A0D52001CB30E /* Resources */,
@@ -240,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F756807D248A0D52001CB30E /* Build configuration list for PBXNativeTarget "SpectrumUITests" */;
 			buildPhases = (
+				71A892FF10B7A8DA839D1F77 /* [CP] Check Pods Manifest.lock */,
 				F756806A248A0D52001CB30E /* Sources */,
 				F756806B248A0D52001CB30E /* Frameworks */,
 				F756806C248A0D52001CB30E /* Resources */,
+				453F2B9BCF05812BC2F9472D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,6 +360,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0990718EBF92F4951837D51C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpectrumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		453F2B9BCF05812BC2F9472D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spectrum-SpectrumUITests/Pods-Spectrum-SpectrumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spectrum-SpectrumUITests/Pods-Spectrum-SpectrumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spectrum-SpectrumUITests/Pods-Spectrum-SpectrumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A892FF10B7A8DA839D1F77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spectrum-SpectrumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A93E3D1E099C273631263A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spectrum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F51B85BBE1F4E91F15D10756 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spectrum/Pods-Spectrum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spectrum/Pods-Spectrum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spectrum/Pods-Spectrum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F7568049248A0D50001CB30E /* Sources */ = {
@@ -496,6 +637,7 @@
 		};
 		F7568078248A0D52001CB30E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C801F1C705928818D9D4A31A /* Pods-Spectrum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +656,7 @@
 		};
 		F7568079248A0D52001CB30E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E2D89F45C3ADB4BFDB163E /* Pods-Spectrum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +675,7 @@
 		};
 		F756807B248A0D52001CB30E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECFCA7DAFB742AE7778B9960 /* Pods-SpectrumTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +698,7 @@
 		};
 		F756807C248A0D52001CB30E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60597A840E4E207CFF2F5521 /* Pods-SpectrumTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +721,7 @@
 		};
 		F756807E248A0D52001CB30E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5591ECFB5F7A0A6EDAFFFE /* Pods-Spectrum-SpectrumUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +742,7 @@
 		};
 		F756807F248A0D52001CB30E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F9E5A2B0188FA75E390637 /* Pods-Spectrum-SpectrumUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
