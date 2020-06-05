@@ -42,6 +42,8 @@
 		F75680C9248A4AD3001CB30E /* CompanyAndMemberProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680C8248A4AD3001CB30E /* CompanyAndMemberProvider.swift */; };
 		F75680CB248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680CA248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift */; };
 		F75680CD248A634C001CB30E /* CompanyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680CC248A634C001CB30E /* CompanyListViewModel.swift */; };
+		F75680D0248A6A28001CB30E /* SortBy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75680CF248A6A28001CB30E /* SortBy.storyboard */; };
+		F75680D4248A6B26001CB30E /* SortByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680D3248A6B26001CB30E /* SortByVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		F75680C8248A4AD3001CB30E /* CompanyAndMemberProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyAndMemberProvider.swift; sourceTree = "<group>"; };
 		F75680CA248A5EE7001CB30E /* GetCompanyAndMemberResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCompanyAndMemberResponse.swift; sourceTree = "<group>"; };
 		F75680CC248A634C001CB30E /* CompanyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewModel.swift; sourceTree = "<group>"; };
+		F75680CF248A6A28001CB30E /* SortBy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SortBy.storyboard; sourceTree = "<group>"; };
+		F75680D3248A6B26001CB30E /* SortByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortByVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,7 @@
 		F7568081248A0E19001CB30E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F75680CE248A6A14001CB30E /* SortByVC */,
 				F75680A8248A3603001CB30E /* CompanyList */,
 			);
 			path = Modules;
@@ -408,6 +413,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F75680CE248A6A14001CB30E /* SortByVC */ = {
+			isa = PBXGroup;
+			children = (
+				F75680D2248A6B11001CB30E /* Controllers */,
+				F75680D1248A6B0C001CB30E /* Storyboards */,
+				F75680CF248A6A28001CB30E /* SortBy.storyboard */,
+			);
+			path = SortByVC;
+			sourceTree = "<group>";
+		};
+		F75680D1248A6B0C001CB30E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F75680D2248A6B11001CB30E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F75680D3248A6B26001CB30E /* SortByVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -521,6 +551,7 @@
 				F75680B0248A3899001CB30E /* SearchCell.xib in Resources */,
 				F75680B8248A415A001CB30E /* CompanyCell.xib in Resources */,
 				F756805A248A0D52001CB30E /* Assets.xcassets in Resources */,
+				F75680D0248A6A28001CB30E /* SortBy.storyboard in Resources */,
 				F75680A3248A2996001CB30E /* BaseTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +687,7 @@
 				F75680BD248A42E1001CB30E /* SecondaryLabel.swift in Sources */,
 				F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */,
 				F75680C2248A43F9001CB30E /* FollowButton.swift in Sources */,
+				F75680D4248A6B26001CB30E /* SortByVC.swift in Sources */,
 				F75680AE248A36B6001CB30E /* CompanyListVC.swift in Sources */,
 				F75680A0248A27D8001CB30E /* UIFonts+Additions.swift in Sources */,
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,

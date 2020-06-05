@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sort ByVC-->
+        <scene sceneID="T6S-6Y-Vdy">
+            <objects>
+                <viewController storyboardIdentifier="SortByVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="8QQ-4f-jb6" customClass="SortByVC" customModule="Spectrum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UDV-Vy-MlA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyY-f5-DXZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-oQ-yWM">
+                                        <rect key="frame" x="0.0" y="558" width="414" height="44"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <items>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="3Nx-tA-6DT"/>
+                                            <barButtonItem title="Done" id="6Me-B9-2gQ">
+                                                <connections>
+                                                    <action selector="didTapDoneButton:" destination="8QQ-4f-jb6" id="z5M-kT-iDR"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-LR-RzW">
+                                        <rect key="frame" x="0.0" y="602" width="414" height="216"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1oO-oQ-yWM" secondAttribute="trailing" symbolic="YES" id="C2E-Ce-udc"/>
+                                    <constraint firstAttribute="bottom" secondItem="D5O-LR-RzW" secondAttribute="bottom" id="IMr-ma-Kq9"/>
+                                    <constraint firstItem="D5O-LR-RzW" firstAttribute="leading" secondItem="UyY-f5-DXZ" secondAttribute="leading" id="Nb6-jl-YOQ"/>
+                                    <constraint firstItem="D5O-LR-RzW" firstAttribute="top" secondItem="1oO-oQ-yWM" secondAttribute="bottom" symbolic="YES" id="PDX-XP-BOE"/>
+                                    <constraint firstItem="1oO-oQ-yWM" firstAttribute="leading" secondItem="UyY-f5-DXZ" secondAttribute="leading" symbolic="YES" id="XE5-gb-wO6"/>
+                                    <constraint firstAttribute="trailing" secondItem="D5O-LR-RzW" secondAttribute="trailing" id="v7p-du-66n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UyY-f5-DXZ" firstAttribute="leading" secondItem="Yla-84-d35" secondAttribute="leading" id="18H-Ui-TGD"/>
+                            <constraint firstItem="UyY-f5-DXZ" firstAttribute="top" secondItem="Yla-84-d35" secondAttribute="top" id="HC5-6m-SFf"/>
+                            <constraint firstItem="Yla-84-d35" firstAttribute="bottom" secondItem="UyY-f5-DXZ" secondAttribute="bottom" id="XAF-MN-xDO"/>
+                            <constraint firstItem="Yla-84-d35" firstAttribute="trailing" secondItem="UyY-f5-DXZ" secondAttribute="trailing" id="XdT-B2-Na4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yla-84-d35"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="6Me-B9-2gQ" id="sJ9-wD-dwD"/>
+                        <outlet property="pickerView" destination="D5O-LR-RzW" id="26I-MC-jP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkv-Qd-NE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="21"/>
+        </scene>
+    </scenes>
+</document>

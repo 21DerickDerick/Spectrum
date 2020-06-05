@@ -34,8 +34,6 @@ class NetworkProvider {
         AF.request(request)
             .validate()
             .responseJSON(completionHandler: { (response) in
-
-                print("Response: \(response)")
                 
                 switch response.result {
                 case .failure(let error):

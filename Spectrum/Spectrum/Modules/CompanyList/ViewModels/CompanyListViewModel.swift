@@ -8,15 +8,29 @@
 
 import Foundation
 
+enum CompanySortType: String {
+    case defaultType = "Default"
+    case nameAscending = "Ascending Name"
+}
+
 class CompanyListViewModel {
-    var provider = CompanyAndMemberProvider()
-    var companies: [Company] = []
+    var currentDisplayCompanies: [Company] = []
+    var defaultCompanies: [Company] = []
+    var nameAscendingCompanies: [Company] = []
+    var currentSortType = CompanySortType.defaultType.rawValue
     
     func getCompanyList(completion: @escaping () -> Void) {
-        provider.getCompanyList { (companies, error) in
+        CompanyAndMemberProvider.shared.getCompanyList { (companies, error) in
             guard error == nil, let companies = companies else { return }
             
-            self.companies = companies
+            self.defaultCompanies = companies
+            
+            self.nameAscendingCompanies = companies.sorted {
+                guard let name1 = $0.name, let name2 = $1.name else { return false }
+                return name1 < name2
+            }
+            
+            self.currentDisplayCompanies = companies
 
             completion()
         }

@@ -34,14 +34,14 @@ class CompanyCell: BaseTableViewCell {
         cardView.layer.cornerRadius = 4
     }
     
-    func setupCell(logoURL: String, companyName: String, companyWebsite: String, companyDescription: String) {
-        if let url = URL(string: logoURL) {
+    func setupCell(logoURL: String?, companyName: String?, companyWebsite: String?, companyDescription: String?) {
+        if let urlString = logoURL, let url = URL(string: urlString) {
             logoImageView.kf.setImage(with: url)
         }
         
-        companyNameLabel.text = companyName
-        companyWebsiteLabel.text = companyWebsite
-        companyDescriptionLabel.text = companyDescription
+        companyNameLabel.text = companyName ?? ""
+        companyWebsiteLabel.text = companyWebsite ?? ""
+        companyDescriptionLabel.text = companyDescription ?? ""
     }
     
     @IBAction func didTapFavoriteButton(_ sender: UIButton) {

@@ -9,6 +9,8 @@
 import Alamofire
 
 class CompanyAndMemberProvider {
+    static var shared = CompanyAndMemberProvider()
+    
     typealias companies = [Company]
     
     func getCompanyList(completion: @escaping (companies?, AFError?) -> Void) {

@@ -11,9 +11,9 @@ import Foundation
 import Foundation
 
 struct Company: Codable {
-    let id, name, website: String
-    let logo: String
-    let about: String
+    let id, name, website: String?
+    let logo: String?
+    let about: String?
     let members: [Member]
 
     enum CodingKeys: String, CodingKey {
@@ -24,10 +24,10 @@ struct Company: Codable {
 }
 
 struct Member: Codable {
-    let id: String
-    let age: Int
-    let name: Name
-    let email, phone: String
+    let id: String?
+    let age: Int?
+    let name: Name?
+    let email, phone: String?
 
     enum CodingKeys: String, CodingKey {
         case id = "_id"
@@ -36,5 +36,5 @@ struct Member: Codable {
 }
 
 struct Name: Codable {
-    let first, last: String
+    let first, last: String?
 }
