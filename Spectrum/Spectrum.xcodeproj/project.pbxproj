@@ -14,6 +14,8 @@
 		F7568073248A0D52001CB30E /* SpectrumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568072248A0D52001CB30E /* SpectrumUITests.swift */; };
 		F7568089248A0F88001CB30E /* RootControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568088248A0F88001CB30E /* RootControllerService.swift */; };
 		F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808A248A0F9B001CB30E /* ServiceDispatcher.swift */; };
+		F756808D248A10C6001CB30E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808C248A10C6001CB30E /* Coordinator.swift */; };
+		F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F7568074248A0D52001CB30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7568088248A0F88001CB30E /* RootControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerService.swift; sourceTree = "<group>"; };
 		F756808A248A0F9B001CB30E /* ServiceDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDispatcher.swift; sourceTree = "<group>"; };
+		F756808C248A10C6001CB30E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,8 @@
 		F7568085248A0E42001CB30E /* Navigations */ = {
 			isa = PBXGroup;
 			children = (
+				F756808C248A10C6001CB30E /* Coordinator.swift */,
+				F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */,
 			);
 			path = Navigations;
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
+				F756808D248A10C6001CB30E /* Coordinator.swift in Sources */,
 				F7568051248A0D50001CB30E /* AppDelegate.swift in Sources */,
 				F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */,
 				F7568089248A0F88001CB30E /* RootControllerService.swift in Sources */,
