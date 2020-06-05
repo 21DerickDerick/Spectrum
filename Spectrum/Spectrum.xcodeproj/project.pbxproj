@@ -23,6 +23,7 @@
 		F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568092248A1A33001CB30E /* NetworkProvider.swift */; };
 		F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568094248A1B30001CB30E /* ReachabilityManager.swift */; };
 		F7568098248A2522001CB30E /* SpinnerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568097248A2522001CB30E /* SpinnerVC.swift */; };
+		F756809B248A25C4001CB30E /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756809A248A25C4001CB30E /* UIColor+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F7568092248A1A33001CB30E /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		F7568094248A1B30001CB30E /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		F7568097248A2522001CB30E /* SpinnerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerVC.swift; sourceTree = "<group>"; };
+		F756809A248A25C4001CB30E /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				F7568096248A250F001CB30E /* LoadingIndicator */,
+				F7568099248A2598001CB30E /* Colors */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -245,6 +248,14 @@
 				F7568097248A2522001CB30E /* SpinnerVC.swift */,
 			);
 			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
+		F7568099248A2598001CB30E /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F756809A248A25C4001CB30E /* UIColor+Additions.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7568095248A1B30001CB30E /* ReachabilityManager.swift in Sources */,
+				F756809B248A25C4001CB30E /* UIColor+Additions.swift in Sources */,
 				F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */,
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
 				F7568098248A2522001CB30E /* SpinnerVC.swift in Sources */,
