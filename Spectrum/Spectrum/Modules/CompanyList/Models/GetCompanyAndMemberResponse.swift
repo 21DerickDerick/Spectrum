@@ -10,11 +10,13 @@ import Foundation
 
 import Foundation
 
-struct Company: Codable {
+class Company: Codable {
     let id, name, website: String?
     let logo: String?
     let about: String?
     let members: [Member]
+    var isFavorite = false
+    var isFollowed = false
 
     enum CodingKeys: String, CodingKey {
         case id = "_id"
@@ -23,7 +25,7 @@ struct Company: Codable {
     }
 }
 
-struct Member: Codable {
+class Member: Codable {
     let id: String?
     let age: Int?
     let name: Name?
@@ -35,6 +37,6 @@ struct Member: Codable {
     }
 }
 
-struct Name: Codable {
+class Name: Codable {
     let first, last: String?
 }

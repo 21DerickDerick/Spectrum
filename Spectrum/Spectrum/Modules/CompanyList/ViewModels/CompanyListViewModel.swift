@@ -21,7 +21,10 @@ class CompanyListViewModel {
     
     func getCompanyList(completion: @escaping () -> Void) {
         CompanyAndMemberProvider.shared.getCompanyList { (companies, error) in
-            guard error == nil, let companies = companies else { return }
+            guard error == nil, let companies = companies else {
+                completion()
+                return
+            }
             
             self.defaultCompanies = companies
             

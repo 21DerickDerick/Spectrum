@@ -19,6 +19,8 @@ class CompanyCell: BaseTableViewCell {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var followButton: FollowButton!
     
+    var company: Company?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
@@ -34,19 +36,51 @@ class CompanyCell: BaseTableViewCell {
         cardView.layer.cornerRadius = 4
     }
     
-    func setupCell(logoURL: String?, companyName: String?, companyWebsite: String?, companyDescription: String?) {
-        if let urlString = logoURL, let url = URL(string: urlString) {
+    func setupCell(company: Company) {
+        if let urlString = company.logo, let url = URL(string: urlString) {
             logoImageView.kf.setImage(with: url)
         }
         
-        companyNameLabel.text = companyName ?? ""
-        companyWebsiteLabel.text = companyWebsite ?? ""
-        companyDescriptionLabel.text = companyDescription ?? ""
+        companyNameLabel.text = company.name ?? ""
+        companyWebsiteLabel.text = company.website ?? ""
+        companyDescriptionLabel.text = company.about ?? ""
+        
+        self.company = company
+        
+        if company.isFollowed {
+            followButton.setTitle("Following", for: .normal)
+        } else {
+            followButton.setTitle("Follow", for: .normal)
+        }
+        
+        if company.isFavorite {
+            favoriteButton.imageView?.image = UIImage(named: "FilledStar")!
+        } else {
+            favoriteButton.imageView?.image = UIImage(named: "EmptyStar")!
+        }
     }
     
     @IBAction func didTapFavoriteButton(_ sender: UIButton) {
+        guard let company = company else { return }
+        
+        company.isFavorite = !company.isFavorite
+        
+        if company.isFavorite {
+            favoriteButton.setImage(UIImage(named: "FilledStar")!, for: .normal)
+        } else {
+            favoriteButton.setImage(UIImage(named: "EmptyStar")!, for: .normal)
+        }
     }
     
     @IBAction func didTapFollowButton(_ sender: FollowButton) {
+        guard let company = company else { return }
+        
+        company.isFollowed = !company.isFollowed
+        
+        if company.isFollowed {
+            followButton.setTitle("Following", for: .normal)
+        } else {
+            followButton.setTitle("Follow", for: .normal)
+        }
     }
 }

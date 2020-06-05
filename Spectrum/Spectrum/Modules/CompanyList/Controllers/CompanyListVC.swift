@@ -68,9 +68,7 @@ extension CompanyListVC {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CompanyCell.self), for: indexPath) as! CompanyCell
             let company = viewModel.currentDisplayCompanies[indexPath.row - 1]
-            cell.setupCell(logoURL: company.logo,
-                           companyName: company.name,
-                           companyWebsite: company.website, companyDescription: company.about)
+            cell.setupCell(company: company)
             return cell
         }
     }
