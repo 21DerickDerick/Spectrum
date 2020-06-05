@@ -15,8 +15,6 @@ class RootControllerService: UIResponder, UIApplicationDelegate {
         ApplicationCoordinator.shared.start()
         ReachabilityManager.shared.start()
         
-        IQKeyboardManager.shared.enable = true
-        
         return true
     }
 }
