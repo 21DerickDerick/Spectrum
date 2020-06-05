@@ -15,6 +15,7 @@ class NetworkProvider {
         
         if !ReachabilityManager.shared.hasConnection {
             AlertWireframe.shared.showNoInternetConnectionAlert(inViewController: ApplicationCoordinator.shared.window.rootViewController)
+            return
         }
         
         guard let url = URL(string: url) else { return }
