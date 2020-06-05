@@ -16,6 +16,7 @@
 		F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808A248A0F9B001CB30E /* ServiceDispatcher.swift */; };
 		F756808D248A10C6001CB30E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808C248A10C6001CB30E /* Coordinator.swift */; };
 		F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */; };
+		F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568090248A1601001CB30E /* AlertWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F756808A248A0F9B001CB30E /* ServiceDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDispatcher.swift; sourceTree = "<group>"; };
 		F756808C248A10C6001CB30E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		F7568090248A1601001CB30E /* AlertWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		F7568087248A0E5D001CB30E /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				F7568090248A1601001CB30E /* AlertWireframe.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
+				F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */,
 				F756808D248A10C6001CB30E /* Coordinator.swift in Sources */,
 				F7568051248A0D50001CB30E /* AppDelegate.swift in Sources */,
 				F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */,
