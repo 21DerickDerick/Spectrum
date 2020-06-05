@@ -14,10 +14,10 @@ extension UIFont {
     }
     
     class var secondary: UIFont {
-        return UIFont(name: "Avenir Next Medium", size: 12)!
+        return UIFont(name: "Avenir Next Medium", size: 16)!
     }
     
     class var tertiary: UIFont {
-        return UIFont(name: "Avenir Next Regular", size: 12)!
+        return UIFont(name: "Avenir Next", size: 12)!
     }
 }

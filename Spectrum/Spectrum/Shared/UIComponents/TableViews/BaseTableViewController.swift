@@ -42,7 +42,7 @@ class BaseTableViewController: UIViewController {
             NSAttributedString.Key.font: UIFont.main,
         ]
         
-        navigationController?.navigationBar.setBackgroundImage(UIColor.spectrumBackground.as1ptImage(), for: .default)
+        navigationController?.navigationBar.setBackgroundImage(UIColor.white.as1ptImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIColor.spectrumFollowButton.as1ptImage()
     }
     

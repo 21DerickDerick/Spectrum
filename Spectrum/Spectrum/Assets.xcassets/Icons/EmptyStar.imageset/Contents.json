@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "search.pdf",
+      "filename" : "EmptyStar.pdf",
       "scale" : "1x"
     },
     {
@@ -15,7 +15,7 @@
     },
     {
       "idiom" : "iphone",
-      "filename" : "search-1.pdf",
+      "filename" : "EmptyStar-1.pdf",
       "scale" : "1x"
     },
     {
