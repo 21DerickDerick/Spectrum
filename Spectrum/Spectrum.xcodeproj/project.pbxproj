@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		F756808D248A10C6001CB30E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808C248A10C6001CB30E /* Coordinator.swift */; };
 		F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */; };
 		F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568090248A1601001CB30E /* AlertWireframe.swift */; };
+		F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568092248A1A33001CB30E /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F756808C248A10C6001CB30E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F756808E248A10F7001CB30E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		F7568090248A1601001CB30E /* AlertWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWireframe.swift; sourceTree = "<group>"; };
+		F7568092248A1A33001CB30E /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,6 @@
 				ECFCA7DAFB742AE7778B9960 /* Pods-SpectrumTests.debug.xcconfig */,
 				60597A840E4E207CFF2F5521 /* Pods-SpectrumTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,6 +201,7 @@
 		F7568083248A0E2D001CB30E /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F7568092248A1A33001CB30E /* NetworkProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -469,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7568093248A1A33001CB30E /* NetworkProvider.swift in Sources */,
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
 				F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */,
 				F756808D248A10C6001CB30E /* Coordinator.swift in Sources */,
