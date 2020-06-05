@@ -108,9 +108,16 @@ extension CompanyListVC: SearchCellDelegate {
             }
             tableView.reloadData()
         } else {
-            viewModel.currentDisplayCompanies = viewModel.currentDisplayCompanies.filter {
+            viewModel.currentDisplayCompanies = viewModel.defaultCompanies.filter {
                 guard let name = $0.name else { return false }
                 return name.lowercased().contains(search.lowercased())
+            }
+            
+            if viewModel.currentSortType == CompanySortType.nameAscending.rawValue {
+                viewModel.currentDisplayCompanies = viewModel.currentDisplayCompanies.sorted {
+                    guard let name1 = $0.name, let name2 = $1.name else { return false }
+                    return name1 < name2
+                }
             }
             
             tableView.reloadData()

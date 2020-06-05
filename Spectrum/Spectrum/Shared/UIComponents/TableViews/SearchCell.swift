@@ -33,18 +33,22 @@ class SearchCell: BaseTableViewCell {
         mainView.backgroundColor = .spectrumBackground
         searchTextField.placeholder = "Search by name"
         
-        searchTextField.addTarget(self, action: #selector(textFieldDidChangeValue), for: UIControl.Event.editingChanged)
+//        searchTextField.addTarget(self, action: #selector(textFieldDidChangeValue), for: UIControl.Event.editingChanged)
         
         searchTextField.delegate = self
     }
     
-    @objc
-    func textFieldDidChangeValue() {
-        delegate?.textDidChange(search: searchTextField.text ?? "")
-    }
+//    @objc
+//    func textFieldDidChangeValue() {
+//        delegate?.textDidChange(search: searchTextField.text ?? "")
+//    }
 }
 
 extension SearchCell: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        delegate?.textDidChange(search: searchTextField.text ?? "")
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if (string == "\n") {
