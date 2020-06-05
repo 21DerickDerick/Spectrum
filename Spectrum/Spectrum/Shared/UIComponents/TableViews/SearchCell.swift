@@ -16,6 +16,7 @@ class SearchCell: BaseTableViewCell {
     
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var searchTextField: SearchTextField!
+    @IBOutlet weak var separatorView: UIView!
     var delegate: SearchCellDelegate?
     
     override func awakeFromNib() {
@@ -31,17 +32,10 @@ class SearchCell: BaseTableViewCell {
         super.setupUI()
         
         mainView.backgroundColor = .spectrumBackground
+        separatorView.backgroundColor = UIColor.spectrumFollowButton.withAlphaComponent(0.3)
         searchTextField.placeholder = "Search by name"
-        
-//        searchTextField.addTarget(self, action: #selector(textFieldDidChangeValue), for: UIControl.Event.editingChanged)
-        
         searchTextField.delegate = self
     }
-    
-//    @objc
-//    func textFieldDidChangeValue() {
-//        delegate?.textDidChange(search: searchTextField.text ?? "")
-//    }
 }
 
 extension SearchCell: UITextFieldDelegate {
