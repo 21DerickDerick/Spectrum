@@ -28,7 +28,7 @@ class BaseTableViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .clear
+        tableView.backgroundColor = .spectrumBackground
         tableView.tableFooterView = UIView()
     }
     
