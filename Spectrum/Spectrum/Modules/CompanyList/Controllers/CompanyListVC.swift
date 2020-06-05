@@ -20,7 +20,9 @@ class CompanyListVC: BaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        showLoadingIndicator()
         viewModel.getCompanyList {
+            self.hideLoadingIndicator()
             self.tableView.reloadData()
         }
     }

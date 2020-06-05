@@ -26,7 +26,6 @@ class CompanyAndMemberProvider {
             }
             
             if let data = data, let companies = try? JSONDecoder().decode(companies.self, from: data) {
-            
                 completion(companies, nil)
                 return
             }
