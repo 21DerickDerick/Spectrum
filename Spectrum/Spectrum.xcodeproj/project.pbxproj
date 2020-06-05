@@ -12,6 +12,8 @@
 		F756805D248A0D52001CB30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F756805B248A0D52001CB30E /* LaunchScreen.storyboard */; };
 		F7568068248A0D52001CB30E /* SpectrumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568067248A0D52001CB30E /* SpectrumTests.swift */; };
 		F7568073248A0D52001CB30E /* SpectrumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568072248A0D52001CB30E /* SpectrumUITests.swift */; };
+		F7568089248A0F88001CB30E /* RootControllerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7568088248A0F88001CB30E /* RootControllerService.swift */; };
+		F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756808A248A0F9B001CB30E /* ServiceDispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		F756806E248A0D52001CB30E /* SpectrumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectrumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7568072248A0D52001CB30E /* SpectrumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumUITests.swift; sourceTree = "<group>"; };
 		F7568074248A0D52001CB30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7568088248A0F88001CB30E /* RootControllerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerService.swift; sourceTree = "<group>"; };
+		F756808A248A0F9B001CB30E /* ServiceDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,6 @@
 			children = (
 				F7568080248A0E11001CB30E /* Shared */,
 				F7568081248A0E19001CB30E /* Modules */,
-				F7568050248A0D50001CB30E /* AppDelegate.swift */,
 				F7568059248A0D52001CB30E /* Assets.xcassets */,
 				F756805B248A0D52001CB30E /* LaunchScreen.storyboard */,
 				F756805E248A0D52001CB30E /* Info.plist */,
@@ -158,6 +161,9 @@
 		F7568084248A0E37001CB30E /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				F7568050248A0D50001CB30E /* AppDelegate.swift */,
+				F7568088248A0F88001CB30E /* RootControllerService.swift */,
+				F756808A248A0F9B001CB30E /* ServiceDispatcher.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7568051248A0D50001CB30E /* AppDelegate.swift in Sources */,
+				F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */,
+				F7568089248A0F88001CB30E /* RootControllerService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
