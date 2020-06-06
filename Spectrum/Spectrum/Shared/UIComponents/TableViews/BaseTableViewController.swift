@@ -39,11 +39,16 @@ class BaseTableViewController: UIViewController {
     func setupUI() {
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.spectrumMain,
-            NSAttributedString.Key.font: UIFont.main,
+            NSAttributedString.Key.font: UIFont.navigationTitle,
         ]
         
         navigationController?.navigationBar.setBackgroundImage(UIColor.white.as1ptImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIColor.spectrumFollowButton.as1ptImage()
+        
+        let backButtonImage = UIImage(named: "BackButton")
+        self.navigationController?.navigationBar.backIndicatorImage = backButtonImage
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButtonImage
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     func showLoadingIndicator() {

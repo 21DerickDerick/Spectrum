@@ -9,6 +9,10 @@
 import UIKit
 
 extension UIFont {
+    class var navigationTitle: UIFont {
+        return UIFont(name: "Avenir Next Demi Bold", size: 22)!
+    }
+    
     class var main: UIFont {
         return UIFont(name: "Avenir Next Demi Bold", size: 18)!
     }
