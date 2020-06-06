@@ -44,6 +44,11 @@
 		F75680CD248A634C001CB30E /* CompanyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680CC248A634C001CB30E /* CompanyListViewModel.swift */; };
 		F75680D0248A6A28001CB30E /* SortBy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75680CF248A6A28001CB30E /* SortBy.storyboard */; };
 		F75680D4248A6B26001CB30E /* SortByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75680D3248A6B26001CB30E /* SortByVC.swift */; };
+		F77A7A23248B3789000CD05A /* MemberListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A7A22248B3789000CD05A /* MemberListCoordinator.swift */; };
+		F77A7A25248B3816000CD05A /* MemberListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A7A24248B3816000CD05A /* MemberListVC.swift */; };
+		F77A7A28248B437A000CD05A /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77A7A27248B437A000CD05A /* MemberCell.xib */; };
+		F77A7A2A248B468B000CD05A /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A7A29248B468B000CD05A /* MemberCell.swift */; };
+		F77A7A2D248B4AF0000CD05A /* MemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A7A2C248B4AF0000CD05A /* MemberListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +118,11 @@
 		F75680CC248A634C001CB30E /* CompanyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewModel.swift; sourceTree = "<group>"; };
 		F75680CF248A6A28001CB30E /* SortBy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SortBy.storyboard; sourceTree = "<group>"; };
 		F75680D3248A6B26001CB30E /* SortByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortByVC.swift; sourceTree = "<group>"; };
+		F77A7A22248B3789000CD05A /* MemberListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListCoordinator.swift; sourceTree = "<group>"; };
+		F77A7A24248B3816000CD05A /* MemberListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListVC.swift; sourceTree = "<group>"; };
+		F77A7A27248B437A000CD05A /* MemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCell.xib; sourceTree = "<group>"; };
+		F77A7A29248B468B000CD05A /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
+		F77A7A2C248B4AF0000CD05A /* MemberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +243,7 @@
 		F7568081248A0E19001CB30E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F77A7A1F248B3764000CD05A /* MemberList */,
 				F75680CE248A6A14001CB30E /* SortByVC */,
 				F75680A8248A3603001CB30E /* CompanyList */,
 			);
@@ -438,6 +449,50 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		F77A7A1F248B3764000CD05A /* MemberList */ = {
+			isa = PBXGroup;
+			children = (
+				F77A7A2B248B4AE5000CD05A /* ViewModels */,
+				F77A7A26248B436C000CD05A /* Cells */,
+				F77A7A21248B3776000CD05A /* Controllers */,
+				F77A7A20248B3771000CD05A /* Coordinators */,
+			);
+			path = MemberList;
+			sourceTree = "<group>";
+		};
+		F77A7A20248B3771000CD05A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F77A7A22248B3789000CD05A /* MemberListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F77A7A21248B3776000CD05A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F77A7A24248B3816000CD05A /* MemberListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F77A7A26248B436C000CD05A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F77A7A27248B437A000CD05A /* MemberCell.xib */,
+				F77A7A29248B468B000CD05A /* MemberCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F77A7A2B248B4AE5000CD05A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F77A7A2C248B4AF0000CD05A /* MemberListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -553,6 +608,7 @@
 				F756805A248A0D52001CB30E /* Assets.xcassets in Resources */,
 				F75680D0248A6A28001CB30E /* SortBy.storyboard in Resources */,
 				F75680A3248A2996001CB30E /* BaseTableViewController.xib in Resources */,
+				F77A7A28248B437A000CD05A /* MemberCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,15 +748,19 @@
 				F75680A0248A27D8001CB30E /* UIFonts+Additions.swift in Sources */,
 				F756808F248A10F7001CB30E /* ApplicationCoordinator.swift in Sources */,
 				F7568098248A2522001CB30E /* SpinnerVC.swift in Sources */,
+				F77A7A2D248B4AF0000CD05A /* MemberListViewModel.swift in Sources */,
 				F75680A5248A29D0001CB30E /* BaseTableViewController.swift in Sources */,
 				F75680C9248A4AD3001CB30E /* CompanyAndMemberProvider.swift in Sources */,
+				F77A7A25248B3816000CD05A /* MemberListVC.swift in Sources */,
 				F75680BF248A430D001CB30E /* TertiaryLabel.swift in Sources */,
 				F7568091248A1601001CB30E /* AlertWireframe.swift in Sources */,
 				F75680AB248A3645001CB30E /* CompanyListCoordinator.swift in Sources */,
+				F77A7A2A248B468B000CD05A /* MemberCell.swift in Sources */,
 				F75680B5248A3E15001CB30E /* SearchTextField.swift in Sources */,
 				F756808D248A10C6001CB30E /* Coordinator.swift in Sources */,
 				F7568051248A0D50001CB30E /* AppDelegate.swift in Sources */,
 				F756808B248A0F9B001CB30E /* ServiceDispatcher.swift in Sources */,
+				F77A7A23248B3789000CD05A /* MemberListCoordinator.swift in Sources */,
 				F75680BB248A42A6001CB30E /* MainLabel.swift in Sources */,
 				F75680C4248A44D9001CB30E /* CompanyCell.swift in Sources */,
 				F75680A7248A2ACA001CB30E /* BaseTableViewCell.swift in Sources */,

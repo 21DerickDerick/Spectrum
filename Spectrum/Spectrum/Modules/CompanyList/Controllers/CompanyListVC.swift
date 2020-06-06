@@ -10,6 +10,7 @@ import UIKit
 
 protocol CompanyListVCDelegate {
     func didTapSortButton(sortArr: [String], currentSortType: String)
+    func didTapCompany(company: Company)
 }
 
 class CompanyListVC: BaseTableViewController {
@@ -75,6 +76,13 @@ extension CompanyListVC {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.row > 0 else { return }
+        
+        let company = viewModel.currentDisplayCompanies[indexPath.row - 1]
+        delegate?.didTapCompany(company: company)
     }
 }
 
