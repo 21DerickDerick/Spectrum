@@ -87,18 +87,21 @@ extension MemberListVC: MemberListCoordinatorDelegate {
         switch selection {
         case MemberListSortType.defaultType.rawValue:
             viewModel.currentDisplayMembers = viewModel.defaultMembers.filter {
+                if viewModel.currentQueryText.lowercased() == "" { return true }
                 guard let firstName = $0.name?.first, let lastName = $0.name?.last else { return false }
                 return firstName.lowercased().contains(viewModel.currentQueryText.lowercased()) || lastName.lowercased().contains(viewModel.currentQueryText.lowercased())
             }
             viewModel.currentSortType = MemberListSortType.defaultType.rawValue
         case MemberListSortType.nameAscending.rawValue:
             viewModel.currentDisplayMembers = viewModel.nameAscendingMembers.filter {
+                if viewModel.currentQueryText.lowercased() == "" { return true }
                 guard let firstName = $0.name?.first, let lastName = $0.name?.last else { return false }
                 return firstName.lowercased().contains(viewModel.currentQueryText.lowercased()) || lastName.lowercased().contains(viewModel.currentQueryText.lowercased())
             }
             viewModel.currentSortType = MemberListSortType.nameAscending.rawValue
         case MemberListSortType.age.rawValue:
             viewModel.currentDisplayMembers = viewModel.sortByAgeMembers.filter {
+                if viewModel.currentQueryText.lowercased() == "" { return true }
                 guard let firstName = $0.name?.first, let lastName = $0.name?.last else { return false }
                 return firstName.lowercased().contains(viewModel.currentQueryText.lowercased()) || lastName.lowercased().contains(viewModel.currentQueryText.lowercased())
             }
