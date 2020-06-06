@@ -1,5 +1,8 @@
 # Spectrum<br />
 
+1. Please Pod Install before running the app.
+2. For better understanding of development process, please check the development process folder
+
 Requirements:<br /><br />
 
 1. Company List<br />
