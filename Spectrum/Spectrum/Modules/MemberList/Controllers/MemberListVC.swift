@@ -85,12 +85,15 @@ extension MemberListVC {
 extension MemberListVC: MemberListCoordinatorDelegate {
     func didFinishSort(selection: String) {
         switch selection {
-        case CompanySortType.defaultType.rawValue:
+        case MemberListSortType.defaultType.rawValue:
             viewModel.currentDisplayMembers = viewModel.defaultMembers
             viewModel.currentSortType = MemberListSortType.defaultType.rawValue
-        case CompanySortType.nameAscending.rawValue:
+        case MemberListSortType.nameAscending.rawValue:
             viewModel.currentDisplayMembers = viewModel.nameAscendingMembers
             viewModel.currentSortType = MemberListSortType.nameAscending.rawValue
+        case MemberListSortType.age.rawValue:
+            viewModel.currentDisplayMembers = viewModel.sortByAgeMembers
+            viewModel.currentSortType = MemberListSortType.age.rawValue
         default:
             break
         }
@@ -107,7 +110,8 @@ extension MemberListVC: SearchCellDelegate {
                 viewModel.currentDisplayMembers = viewModel.defaultMembers
             case MemberListSortType.nameAscending.rawValue:
                 viewModel.currentDisplayMembers = viewModel.nameAscendingMembers
-            // Todo : age
+            case MemberListSortType.age.rawValue:
+                viewModel.currentDisplayMembers = viewModel.sortByAgeMembers
             default:
                 break
             }

@@ -19,6 +19,7 @@ class MemberListViewModel {
     var currentDisplayMembers: [Member] = []
     var defaultMembers: [Member] = []
     var nameAscendingMembers: [Member] = []
+    var sortByAgeMembers: [Member] = []
     
     func setupMembers(company: Company?) {
         guard let company = company else { return }
@@ -27,6 +28,11 @@ class MemberListViewModel {
         nameAscendingMembers = defaultMembers.sorted {
             guard let firstName1 = $0.name?.first, let firstName2 = $1.name?.first else { return false }
             return firstName1 < firstName2
+        }
+        
+        sortByAgeMembers = defaultMembers.sorted {
+            guard let member1Age = $0.age, let member2Age = $1.age else { return false }
+            return member1Age < member2Age
         }
         
         currentDisplayMembers = defaultMembers
