@@ -33,6 +33,7 @@ class SortByVC: UIViewController {
     
     func setupUI() {
         doneButton.title = "Done"
+        doneButton.tintColor = .spectrumMain
         
         if let currentSortType = currentSortType {
             for (index, sortType) in sortArr.enumerated() {
