@@ -34,6 +34,7 @@ class SearchCell: BaseTableViewCell {
         mainView.backgroundColor = .spectrumBackground
         separatorView.backgroundColor = UIColor.spectrumFollowButton.withAlphaComponent(0.3)
         searchTextField.placeholder = "Search by name"
+        searchTextField.autocorrectionType = .no
         searchTextField.delegate = self
     }
 }
