@@ -20,6 +20,7 @@ class MemberListViewModel {
     var defaultMembers: [Member] = []
     var nameAscendingMembers: [Member] = []
     var sortByAgeMembers: [Member] = []
+    var currentQueryText = ""
     
     func setupMembers(company: Company?) {
         guard let company = company else { return }

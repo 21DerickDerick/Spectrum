@@ -86,13 +86,22 @@ extension MemberListVC: MemberListCoordinatorDelegate {
     func didFinishSort(selection: String) {
         switch selection {
         case MemberListSortType.defaultType.rawValue:
-            viewModel.currentDisplayMembers = viewModel.defaultMembers
+            viewModel.currentDisplayMembers = viewModel.defaultMembers.filter {
+                guard let firstName = $0.name?.first, let lastName = $0.name?.last else { return false }
+                return firstName.lowercased().contains(viewModel.currentQueryText.lowercased()) || lastName.lowercased().contains(viewModel.currentQueryText.lowercased())
+            }
             viewModel.currentSortType = MemberListSortType.defaultType.rawValue
         case MemberListSortType.nameAscending.rawValue:
-            viewModel.currentDisplayMembers = viewModel.nameAscendingMembers
+            viewModel.currentDisplayMembers = viewModel.nameAscendingMembers.filter {
+                guard let firstName = $0.name?.first, let lastName = $0.name?.last else { return false }
+                return firstName.lowercased().contains(viewModel.currentQueryText.lowercased()) || lastName.lowercased().contains(viewModel.currentQueryText.lowercased())
+            }
             viewModel.currentSortType = MemberListSortType.nameAscending.rawValue
         case MemberListSortType.age.rawValue:
-            viewModel.currentDisplayMembers = viewModel.sortByAgeMembers
+            viewModel.currentDisplayMembers = viewModel.sortByAgeMembers.filter {
+                guard let firstName = $0.name?.first, let lastName = $0.name?.last else { return false }
+                return firstName.lowercased().contains(viewModel.currentQueryText.lowercased()) || lastName.lowercased().contains(viewModel.currentQueryText.lowercased())
+            }
             viewModel.currentSortType = MemberListSortType.age.rawValue
         default:
             break
@@ -104,6 +113,8 @@ extension MemberListVC: MemberListCoordinatorDelegate {
 
 extension MemberListVC: SearchCellDelegate {
     func textDidChange(search: String) {
+        viewModel.currentQueryText = search
+        
         if search.trimmingCharacters(in: .whitespaces) == "" {
             switch viewModel.currentSortType {
             case MemberListSortType.defaultType.rawValue:
@@ -122,10 +133,17 @@ extension MemberListVC: SearchCellDelegate {
                 return firstName.lowercased().contains(search.lowercased()) || lastName.lowercased().contains(search.lowercased())
             }
 
-            if viewModel.currentSortType == CompanySortType.nameAscending.rawValue {
+            if viewModel.currentSortType == MemberListSortType.nameAscending.rawValue {
                 viewModel.currentDisplayMembers = viewModel.currentDisplayMembers.sorted {
                     guard let firstName1 = $0.name?.first, let firstName2 = $1.name?.last else { return false }
                     return firstName1 < firstName2
+                }
+            }
+            
+            if viewModel.currentSortType == MemberListSortType.age.rawValue {
+                viewModel.currentDisplayMembers = viewModel.currentDisplayMembers.sorted {
+                    guard let member1Age = $0.age, let member2Age = $1.age else { return false }
+                    return member1Age < member2Age
                 }
             }
 
