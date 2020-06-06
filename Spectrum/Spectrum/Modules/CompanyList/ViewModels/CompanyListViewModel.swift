@@ -18,6 +18,7 @@ class CompanyListViewModel {
     var defaultCompanies: [Company] = []
     var nameAscendingCompanies: [Company] = []
     var currentSortType = CompanySortType.defaultType.rawValue
+    var currentQueryText = ""
     
     func getCompanyList(completion: @escaping () -> Void) {
         CompanyAndMemberProvider.shared.getCompanyList { (companies, error) in

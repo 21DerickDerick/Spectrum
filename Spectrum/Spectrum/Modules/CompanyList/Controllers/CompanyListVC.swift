@@ -90,10 +90,18 @@ extension CompanyListVC: CompanyListCoordinatorDelegate {
     func didFinishSort(selection: String) {
         switch selection {
         case CompanySortType.defaultType.rawValue:
-            viewModel.currentDisplayCompanies = viewModel.defaultCompanies
+            viewModel.currentDisplayCompanies = viewModel.defaultCompanies.filter {
+                if viewModel.currentQueryText.lowercased() == "" { return true }
+                guard let companyName = $0.name else { return false }
+                return companyName.lowercased().contains(viewModel.currentQueryText.lowercased())
+            }
             viewModel.currentSortType = CompanySortType.defaultType.rawValue
         case CompanySortType.nameAscending.rawValue:
-            viewModel.currentDisplayCompanies = viewModel.nameAscendingCompanies
+            viewModel.currentDisplayCompanies = viewModel.nameAscendingCompanies.filter {
+                if viewModel.currentQueryText.lowercased() == "" { return true }
+                guard let companyName = $0.name else { return false }
+                return companyName.lowercased().contains(viewModel.currentQueryText.lowercased())
+            }
             viewModel.currentSortType = CompanySortType.nameAscending.rawValue
         default:
             break
@@ -105,6 +113,8 @@ extension CompanyListVC: CompanyListCoordinatorDelegate {
 
 extension CompanyListVC: SearchCellDelegate {
     func textDidChange(search: String) {
+        viewModel.currentQueryText = search
+        
         if search.trimmingCharacters(in: .whitespaces) == "" {
             switch viewModel.currentSortType {
             case CompanySortType.defaultType.rawValue:
