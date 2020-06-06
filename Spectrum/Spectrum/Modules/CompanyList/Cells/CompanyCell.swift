@@ -37,6 +37,10 @@ class CompanyCell: BaseTableViewCell {
     }
     
     func setupCell(company: Company) {
+        
+        logoImageView.layer.cornerRadius = 4
+        logoImageView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
+        
         if let urlString = company.logo, let url = URL(string: urlString) {
             logoImageView.kf.setImage(with: url)
         }

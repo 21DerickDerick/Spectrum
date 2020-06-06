@@ -19,17 +19,17 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HF2-z4-qwG">
                         <rect key="frame" x="16" y="10" width="515" height="297"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jr4-3n-s58">
-                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="297"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jr4-3n-s58">
+                                <rect key="frame" x="0.0" y="0.0" width="180.5" height="297"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0v-W7-Vz1" customClass="MainLabel" customModule="Spectrum" customModuleProvider="target">
-                                <rect key="frame" x="176.5" y="12" width="290.5" height="20.5"/>
+                                <rect key="frame" x="202.5" y="12" width="264.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.apple.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ma-g9-yzQ" customClass="TertiaryLabel" customModule="Spectrum" customModuleProvider="target">
-                                <rect key="frame" x="176.5" y="36.5" width="290.5" height="20.5"/>
+                                <rect key="frame" x="202.5" y="36.5" width="264.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A fruit company" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeT-tO-Kap" customClass="TertiaryLabel" customModule="Spectrum" customModuleProvider="target">
-                                <rect key="frame" x="176.5" y="61" width="290.5" height="20.5"/>
+                                <rect key="frame" x="202.5" y="61" width="264.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                             <constraint firstItem="rN8-f7-QER" firstAttribute="leading" secondItem="5Ma-g9-yzQ" secondAttribute="trailing" constant="16" id="f7g-tB-HM8"/>
                             <constraint firstAttribute="bottom" secondItem="Jr4-3n-s58" secondAttribute="bottom" id="hd1-sN-NhB"/>
                             <constraint firstAttribute="trailing" secondItem="rN8-f7-QER" secondAttribute="trailing" constant="12" id="k0q-bh-sII"/>
-                            <constraint firstItem="Jr4-3n-s58" firstAttribute="width" secondItem="HF2-z4-qwG" secondAttribute="width" multiplier="0.3" id="kfc-Em-kuv"/>
+                            <constraint firstItem="Jr4-3n-s58" firstAttribute="width" secondItem="HF2-z4-qwG" secondAttribute="width" multiplier="0.35" id="kfc-Em-kuv"/>
                             <constraint firstItem="yeT-tO-Kap" firstAttribute="top" secondItem="5Ma-g9-yzQ" secondAttribute="bottom" constant="4" id="njB-WX-g5N"/>
                             <constraint firstItem="Jr4-3n-s58" firstAttribute="top" secondItem="HF2-z4-qwG" secondAttribute="top" id="ovy-Kd-EeB"/>
                             <constraint firstItem="ZyB-Lp-GB5" firstAttribute="top" secondItem="yeT-tO-Kap" secondAttribute="bottom" constant="24" id="qzc-uc-uzc"/>
