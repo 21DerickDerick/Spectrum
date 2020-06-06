@@ -13,8 +13,7 @@ Requirements:<br /><br />
   a. Display information: Name, Age, Phone, Email<br />
   b. Sort list by name and age<br />
   c. Search member by name<br />
-  d. Mark company as favorite<br />
-  e. Follow company<br />
+  d. Mark member as favorite<br />
   
 Implementation:<br />
 
@@ -33,17 +32,31 @@ Implementation:<br />
   
   ![Sort list by name](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/CompanyList/SearchCompanyByName.PNG)<br />
   
-  d. Mark a company as favorite<br />
+  d. Mark a company as favorite (Data is not persisted after quitting app)<br />
   
   ![Sort list by name](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/CompanyList/MarkCompanyAsFavorite.JPEG)<br />
   
-  e. Follow a company<br />
+  e. Follow a company (Data is not persisted after quitting app)<br />
   
 ![Follow a company](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/CompanyList/FollowACompany.jpeg)<br />
   
-2. Member List
-  a. Display information: Name, Age, Phone, Email
-  b. Sort list by name and age
-  c. Search member by name
-  d. Mark company as favorite
-  e. Follow company
+2. Member List<br />
+  a. Display information: Name, Age, Phone, Email<br />
+  
+  ![Display information: Name, Age, Phone, Email](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/MemberList/memberDisplayInformation.jpeg)<br />
+  
+  b. Sort list by name and age<br />
+  
+  ![Sort list by name and age](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/MemberList/MemberSortBySelection.PNG)<br />
+  
+  ![Sort list by name](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/MemberList/SortByName.PNG)<br />
+  
+  ![Sort list by age](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/MemberList/SortByAge.PNG)<br />
+  
+  c. Search member by name<br />
+  
+  ![Search member by name](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/MemberList/MemberSearchByName.png)<br />
+  
+  d. Mark member as favorite (Data is not persisted after quitting app)<br />
+  
+  ![Search member by name](https://github.com/21DerickDerick/Spectrum/blob/AddDevelopmentProcessAndUpdateReadme/SpectrumDevProcess/Requirements/MemberList/MemberMarkAsFavorite.jpeg)<br />
